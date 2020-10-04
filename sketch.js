@@ -1,8 +1,12 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 100);
+  
 }
 
 function draw() {
-  background(0, 255, 0);
-  rect(200, 200, 200, 200);
+  console.log(mouseX, mouseY)
+  background(225, 255, 0);
+  let millisecond = millis();
+  text('How long I have been working on this project: ' + millisecond, 5, 40 );
+  text('(ms)', 300, 56)
 }
